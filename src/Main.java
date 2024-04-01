@@ -85,23 +85,34 @@ public class Main {
         return numMax;
     }
 
-    public static int maxMinChange(int[] m)
+    public static int swapMinMax(int[] m)
         {
-            int minNumber = 0, maxNumber = 0;
-            for (int i = 0; i < m.length; i++){
-                if (m[i] < m[minNumber])
-                    minNumber = i;
-                if (m[i] > m[maxNumber])
+            int max = m[0], min = m[0], maxNumber = 0, minNumber = 0;
+            for (int i = 1; i < m.length; i++) {
+                if (m[i] > max) {
+                    max = m[i];
                     maxNumber = i;
-            max = m[];
-        }
-            if (m < min);
-            min = m[];
-        }
+                }
+                if (m[i] < min) {
+                    min = m[i];
+                    minNumber = i;
+                }
+            }
+                m[maxNumber] = min;
+                m[minNumber] = max;
 
+                return m;
+            }
 
-
-    }
-
+public static int backNumberOf(int[] m)
+int length = 0;
+for (int element: m)
+{
+length++;
 }
+        for (int i = length - 1; i >= 0; i--){
+        System.out.println(m[i]);
+
+
+
 
