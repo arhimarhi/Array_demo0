@@ -79,14 +79,29 @@ public class Main {
         int numMax = 0;
         for (int i = 1; i < m.length; i++) {
             if (m[i] > max) {
-              numMax = m[i];
+                numMax = m[i];
             }
         }
         return numMax;
+    }
 
-
+    public static int maxMinChange(int[] m)
+        {
+            int minNumber = 0, maxNumber = 0;
+            for (int i = 0; i < m.length; i++){
+                if (m[i] < m[minNumber])
+                    minNumber = i;
+                if (m[i] > m[maxNumber])
+                    maxNumber = i;
+            max = m[];
+        }
+            if (m < min);
+            min = m[];
+        }
 
 
 
     }
+
+}
 
